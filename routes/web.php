@@ -43,7 +43,7 @@ Route::name('students.')->prefix('students')->group(function() {
 
     Route::get('/{id}', [StudentController:: class, 'show'])->name('show');  
 
-    Route::get('/{id}/edit', [StudentController:: class, 'edit'])->name('edit'); 
+    Route::get('/{id}/edit', [StudentController:: class, 'edit'])->name('edit');
 
     Route::post('/', [StudentController:: class, 'store'])->name('store'); 
 
