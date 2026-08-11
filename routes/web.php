@@ -54,7 +54,7 @@ Route::name('students.')->prefix('students')->group(function() {
 
 //SchoolClasses (INVOKABLE)
 
-Route::name('SchoolClasses.')->prefix('SchoolClasses')->group(function() {
+Route::name('classes.')->prefix('classes')->group(function() {
     Route::get('/', IndexController::class)->name('index');
 
     Route::get('/create', CreateController::class)->name('create');
